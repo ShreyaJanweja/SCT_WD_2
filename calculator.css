@@ -1,0 +1,110 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    /* 🔹 FIXED DARK BACKGROUND */
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #1e293b;  /* Dark Blue-Grey */
+    }
+
+    /* 🔹 Heading */
+    .title {
+      color: #f1f1f1;
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      text-align: center;
+    }
+
+    /* 🔹 Tagline */
+    .tagline {
+      color: #a5a5a5;
+      font-size: 1rem;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    /* 🔹 Calculator Box (same as before) */
+    .container {
+      background: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+      padding: 2rem;
+      width: 340px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    #display {
+      width: 100%;
+      height: 3.5rem;
+      font-size: 1.5rem;
+      text-align: right;
+      border: none;
+      border-radius: 12px;
+      padding: 0 15px;
+      margin-bottom: 1.2rem;
+      background: rgba(0, 0, 0, 0.5);
+      color: #0ff;
+      outline: none;
+      box-shadow: inset 2px 2px 6px rgba(0,255,255,0.2),
+                  inset -2px -2px 6px rgba(0,0,0,0.6);
+    }
+
+    .calculator {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .calculator button {
+      height: 70px;
+      font-size: 1.4rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 15px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #0ff;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 0 8px rgba(0, 255, 255, 0.15);
+    }
+
+    .calculator button:hover {
+      background: rgba(0, 255, 255, 0.15);
+      box-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
+      transform: translateY(-3px);
+    }
+
+    .calculator button:active {
+      transform: scale(0.95);
+    }
+
+    /* Special Buttons */
+    .operator {
+      background: linear-gradient(135deg, #ff9966, #ff5e62);
+      color: #fff;
+    }
+    .equal {
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      color: #fff;
+    }
+    .clear {
+      background: linear-gradient(135deg, #ff4e50, #f9d423);
+      color: #fff;
+    }
+    .backspace {
+      background: linear-gradient(135deg, #9d50bb, #6e48aa);
+      color: #fff;
+    }
